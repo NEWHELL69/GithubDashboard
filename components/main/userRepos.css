@@ -1,0 +1,51 @@
+#userRepos {
+    /* Box-model */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+#userRepoTemplate {
+    display: none;
+}
+
+.userRepo {
+    /* Box-model */
+    margin-bottom: 12px;
+    padding: 12px;
+
+    /* visual */
+    border: 2px solid black;
+}
+
+@media (min-width: 576px) {
+    #userRepos {
+        flex-direction: row;
+    }
+
+    .userRepo {
+        /* Box-model */
+        width: 45%;
+    }
+}
+
+.userRepoTopics {
+    /* Box model */
+    display: flex;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+
+    /* Visual */
+    list-style: none;
+}
+
+.userRepoTopic {
+    /* box-model */
+    padding: 3px;
+
+    /* Visual */
+    border-radius: 2px;
+    background-color: cadetblue;
+}

@@ -1,0 +1,40 @@
+#userDetails #userImage {
+    /* Visual */
+    border-radius: 100%;
+}
+
+#userDetails #userDetails1 {
+    /* Box-model */
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#userDetails #userDetails1 {
+    /* Box-model */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+@media (min-width: 576px) {
+    #userDetails #userDetails1 {
+        flex-direction: row;
+    }
+}
+
+#userDetails #userImage {
+    /* Box-model */
+    max-height: 216px;
+}
+
+#userDetails #userGithub {
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    #userDetails #userGithub {
+        text-align:unset;
+    }
+}

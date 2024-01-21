@@ -1,0 +1,16 @@
+header #userSearchResults {
+    position: fixed;
+    display: inline;
+
+    background-color: whitesmoke;
+}
+
+header #userSearchResults a {
+    display: block;
+    cursor: pointer;
+    margin: 0px;
+}
+
+header #userSearchResults a:hover {
+    background-color:cadetblue;
+}

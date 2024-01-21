@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyle Assignment</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./components/header/userSearch.css">
+    <link rel="stylesheet" href="./components/main/pagination.css">
+    <link rel="stylesheet" href="./components/main/userDetails.css">
+    <link rel="stylesheet" href="./components/main/main.css">
+    <link rel="stylesheet" href="./components/main/userRepos.css">
+    <link rel="stylesheet" href="./components/header/header.css">
+</head>
+<body>
+    <header>
+        <label for="userSearchField">Search users:</label>
+        <input type="search" id="userSearchField" name="q" />
+        <div id="userSearchResults"></div>
+
+        <label for="perPageReposField">Per page repos</label>
+        <input type="number" id="perPageReposField" />
+        <button id="perPageReposBtn">Submit</button>
+    </header>
+    <p id="mainLoading" hidden>Loading...</p>
+    <main hidden>
+        <div id="userDetails">
+            <div id="userDetails1">
+                <img src="" id="userImage" alt="user image">
+                <div id="userInfo">
+                    <h1 id="userName"></h1>
+                    <p id="userBio"></p>
+                    <p id="userLocation"></p>
+                    <p>Twitter: <a id="userTwitter"></a></p>
+                </div>
+            </div>
+            <div>
+                <p id="userGithub"><a href=""></a></p>
+            </div>            
+        </div>
+        <div>
+            <label for="searchUserRepo">Search repositories:</label>
+            <input type="search" id="searchUserRepo" name="q" />
+        </div>
+        <div id="userRepos">
+        </div>
+        <div id="pagination" hidden>
+            <ul>
+                <li id="paginationOlder" disabled><a href="#">Older</a></li>
+                <div id="paginationPages"></div>
+                <li id="paginationNewer"><a href="#">Newer</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <!-- Ignore -->
+        <div id="userRepoTemplate" class="userRepo">
+            <h2 class="userRepoName"></h2>
+            <p class="userRepoDisc"></p>
+            <ul class="userRepoTopics">
+                <li class="userRepoTopic"></li>
+            </ul>
+        </div>
+    </footer>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

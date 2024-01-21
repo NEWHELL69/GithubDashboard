@@ -1,0 +1,57 @@
+#pagination {
+    /* Visual */
+    background-color: white;
+}
+
+#pagination[hidden] {
+    /* Box-model */
+    display: none;
+}
+
+#pagination ul {
+    /* reset */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#pagination #paginationPages {
+    /* Box model */
+    display: inline;
+}
+
+#pagination li {
+    /* Box model */
+    display: inline;
+
+    /* Visual */
+    border: 1px solid black;
+    padding: 6px;
+
+    /* Misc */
+    cursor: pointer;
+}
+
+#pagination li[disabled] {
+    border-color: gray;
+    color: grey;
+}
+
+#pagination li[active] {
+    background-color: cadetblue;
+}
+
+#pagination #paginationNewer {
+    /* visual */
+    border-radius: 0 18px 18px 0;
+}
+
+#pagination #paginationOlder {
+    /* visual */
+    border-radius: 18px 0 0 18px;
+}
+
+#pagination a {
+    /* Typography */
+    text-decoration: none;
+}
