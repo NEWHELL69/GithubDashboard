@@ -3,6 +3,10 @@ import { showUserRepos } from "../main/userRepos.js";
 
 (() => {
     document.querySelector("#perPageReposBtn").addEventListener("click", () => {
+        if(document.querySelector("#perPageReposField").value < 1) {
+            return;
+        }
+
         if(document.querySelector("#perPageReposField").value > 100) {
             return;
         }
